@@ -10,42 +10,68 @@
     <p>¿Quieres cambiar tus viejos tenis por un par personalizado de Tenis Mike&reg;? Justifica el por qué tus tenis se <em>tienen que ir</em> y tú puede ser uno de los diez afortunados ganadores.</p>
 
     <form action="http://localhost/hweb/practicas/p09/concurso.php" method="post">
-        <h2>Información de Participación</h2>
-        <h3>Información Personal</h3>
-        <ul>
-            <li>Nombre: <input type="text" name="name"></li>
-            <li>Dirección de E-mail: <input type="email" name="email"></li>
-            <li>Número Telefónico: <input type="tel" name="phone"></li>
-            <li>
-                Mis tenis son tan feos porque...<br>
-                <textarea name="story" rows="4" cols="60" maxlength="300" placeholder="No más de 300 caracteres de longitud"></textarea>
-            </li>
-
-          <h3>Diseña tus Mike personalizados:</h3>
-          <h4>Diseño personalizado del Tenis</h4>
         
-          <p>Color (escoge uno):</p>
-          <ul>
-            <li><input type="radio" name="color" value="red"> Rojo</li>
-            <li><input type="radio" name="color" value="blue" checked> Azul</li>
-            <li><input type="radio" name="color" value="black"> Negro</li>
-            <li><input type="radio" name="color" value="silver"> Plateado</li>
-          </ul>
+        <h2>Información de Participación</h2>
 
-          <p>Características (escoge tantas como quieras):</p>
-          <ul>
-            <li><input type="checkbox" name="features[]" value="laces"> Cordones brillantes</li>
-            <li><input type="checkbox" name="features[]" value="logo" checked> Logo metálico</li>
-            <li><input type="checkbox" name="features[]" value="sole"> Suela luminosa</li>
-            <li><input type="checkbox" name="features[]" value="wifi"> WiFi integrado</li>
-          </ul>
-          </ul>
+        <fieldset>
+            <legend>Información Personal</legend>
+            <ul>
+                <li>Nombre: <input type="text" name="name"></li>
+                <li>Dirección de E-mail: <input type="email" name="email"></li>
+                <li>Número Telefónico: <input type="tel" name="phone"></li>
+                <li>
+                    Mis tenis son tan feos porque...<br>
+                    <textarea name="story" rows="4" cols="60" maxlength="300" placeholder="No más de 300 caracteres de longitud"></textarea>
+                </li>
+            </ul>
+        </fieldset>
 
-          <p>
+        <fieldset>
+            <legend>Diseño personalizado del Tenis</legend>
+            
+            <fieldset>
+                <legend>Color (escoge uno):</legend>
+                <ul>
+                    <li><input type="radio" name="color" value="red"> Rojo</li>
+                    <li><input type="radio" name="color" value="blue" checked> Azul</li>
+                    <li><input type="radio" name="color" value="black"> Negro</li>
+                    <li><input type="radio" name="color" value="silver"> Plateado</li>
+                </ul>
+            </fieldset>
+
+            <fieldset>
+                <legend>Características (escoge tantas como quieras):</legend>
+                <ul>
+                    <li><input type="checkbox" name="features[]" value="laces"> Cordones brillantes</li>
+                    <li><input type="checkbox" name="features[]" value="logo" checked> Logo metálico</li>
+                    <li><input type="checkbox" name="features[]" value="sole"> Suela luminosa</li>
+                    <li><input type="checkbox" name="features[]" value="wifi"> WiFi integrado</li>
+                </ul>
+            </fieldset>
+
+            <fieldset>
+                <legend>Talla</legend>
+                <p>Las medidas reflejan el estándar masculino: 
+                    <select name="size" size="1">
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5" selected>5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                    </select>
+                </p>
+            </fieldset>
+        </fieldset>
+
+        <p>
             <input type="submit" value="¡Chidos mis Tenis!">
             <input type="reset" value="Limpiar">
-          </p>
-          
+        </p>
+
     </form>
 
 </body>
