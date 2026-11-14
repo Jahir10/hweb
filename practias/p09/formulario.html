@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Concurso Tenis Mike</title>
+</head>
+<body>
+
+    <h1>Registro al Concurso "Chidos mis Tenis"</h1>
+    <p>¿Quieres cambiar tus viejos tenis por un par personalizado de Tenis Mike&reg;? Justifica el por qué tus tenis se <em>tienen que ir</em> y tú puede ser uno de los diez afortunados ganadores.</p>
+
+    <form action="http://localhost/hweb/practicas/p09/concurso.php" method="post">
+        <h2>Información de Participación</h2>
+        <h3>Información Personal</h3>
+        <ul>
+            <li>Nombre: <input type="text" name="name"></li>
+            <li>Dirección de E-mail: <input type="email" name="email"></li>
+            <li>Número Telefónico: <input type="tel" name="phone"></li>
+            <li>
+                Mis tenis son tan feos porque...<br>
+                <textarea name="story" rows="4" cols="60" maxlength="300" placeholder="No más de 300 caracteres de longitud"></textarea>
+            </li>
+        </ul>
+
+        <p>
+            <input type="submit" value="¡Chidos mis Tenis!">
+            <input type="reset" value="Limpiar">
+        </p>
+    </form>
+
+</body>
+</html>
