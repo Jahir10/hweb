@@ -20,12 +20,32 @@
                 Mis tenis son tan feos porque...<br>
                 <textarea name="story" rows="4" cols="60" maxlength="300" placeholder="No más de 300 caracteres de longitud"></textarea>
             </li>
-        </ul>
 
-        <p>
+          <h3>Diseña tus Mike personalizados:</h3>
+          <h4>Diseño personalizado del Tenis</h4>
+        
+          <p>Color (escoge uno):</p>
+          <ul>
+            <li><input type="radio" name="color" value="red"> Rojo</li>
+            <li><input type="radio" name="color" value="blue" checked> Azul</li>
+            <li><input type="radio" name="color" value="black"> Negro</li>
+            <li><input type="radio" name="color" value="silver"> Plateado</li>
+          </ul>
+
+          <p>Características (escoge tantas como quieras):</p>
+          <ul>
+            <li><input type="checkbox" name="features[]" value="laces"> Cordones brillantes</li>
+            <li><input type="checkbox" name="features[]" value="logo" checked> Logo metálico</li>
+            <li><input type="checkbox" name="features[]" value="sole"> Suela luminosa</li>
+            <li><input type="checkbox" name="features[]" value="wifi"> WiFi integrado</li>
+          </ul>
+          </ul>
+
+          <p>
             <input type="submit" value="¡Chidos mis Tenis!">
             <input type="reset" value="Limpiar">
-        </p>
+          </p>
+          
     </form>
 
 </body>
